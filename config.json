@@ -1,0 +1,9 @@
+{
+	"_comment": "runtime (ms), latency_threshold (ns)",
+	"runtime":86400000,
+	"accuracy": 0.99999999,
+	"func_accuracy": 0.999999,
+	"temp_accuracy": 1.5,
+	"e_size_thresh": -1,
+	"latency_threshold": 1000000000.0
+}

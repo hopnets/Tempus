@@ -1,0 +1,1058 @@
+{
+    "routers": [
+        {
+            "name": "edge_1_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_1_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_1_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_1_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_3",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_4",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_2_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_2_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_2_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_2_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_3",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_4",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_3_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_3_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_3_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_3_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_3",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_4",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_4_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_4_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edge_4_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "aggr_4_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "edge_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_3",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "edge_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "core_4",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "core_1",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "core_2",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_1",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "core_3",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "core_4",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "aggr_1_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_2_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_3_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                },
+                {
+                    "to": "aggr_4_2",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "queue_measurement/dctcp_us.csv"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "v": "edge_1_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_1_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_1_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_3",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_1_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_4",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_1_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_2_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_2_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_2_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_3",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_2_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_4",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_2_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_3_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_3_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_3_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_3",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_3_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_4",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_3_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_4_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_4_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_1",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_4_1",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_3",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "edge_4_2",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        },
+        {
+            "v": "core_4",
+            "failProb": 0.001,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "aggr_4_2",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": []
+            }
+        }
+    ],
+    "intent": {
+        "src": "edge_1_1",
+        "dst": "edge_4_2"
+    }
+}

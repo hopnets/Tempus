@@ -1,0 +1,255 @@
+{
+    "routers": [
+        {
+            "name": "S",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "A",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "B",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "D",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "A",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "S",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "D",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "S",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "D",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "D",
+            "failProb": 0.0,
+            "outQdelayModel": [
+                {
+                    "to": "S",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "A",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                },
+                {
+                    "to": "B",
+                    "delayModel": {
+                        "delayType": "Empiric",
+                        "args": [
+                            "dists/tcp_empiricQ_100G.csv"
+                        ],
+                        "isEmpiric": true
+                    }
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "v": "S",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "A",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "S",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "B",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "S",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "D",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "A",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "S",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "A",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "D",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "B",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "S",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "B",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "D",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "D",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "S",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "D",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "A",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        },
+        {
+            "v": "D",
+            "failProb": 0.1,
+            "w_uv": 1,
+            "w_vu": 1,
+            "u": "B",
+            "delayModel": {
+                "delayType": "Gamma",
+                "args": [],
+                "isEmpiric": true
+            }
+        }
+    ],
+    "intent": {
+        "threshold": 1000.0,
+        "src": "S",
+        "dst": "D"
+    }
+}
