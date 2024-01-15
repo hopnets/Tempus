@@ -4,10 +4,10 @@ This repository provides the instructions and files required to run the experime
 We used Julia to implement Tempus and ran our experiments on Ubuntu machines (version: 18.04) so all the commands in this repository are for Ubuntu.
 To run the experiments, you should follow the following steps:
 
-* [Step 1: Installing Julia](#step-1-installing-dependencies) (~ 10 minutes)
-* [Step 2: Cloning the repository](#step-3-cloning-the-repository) (~ 5 minutes)
-* [Step 3: Installing the dependencies](#step-1-installing-dependencies) (~ 5 minutes)
-* [Step 4: Running the experiments](#step-1-installing-dependencies) (This step can take from a few hours to a few days depending on the experiments that you run)
+* [Step 1: Installing Julia](#step-1-installing-julia) (~ 10 minutes)
+* [Step 2: Cloning the repository](#step-2-cloning-the-repository) (~ 5 minutes)
+* [Step 3: Installing the dependencies](#step-3-installing-the-dependencies) (~ 5 minutes)
+* [Step 4: Running the experiments](#step-4-running-the-experiments) (This step can take from a few hours to a few days depending on the experiments that you run)
 
 
 ## Step 1: Installing Julia
