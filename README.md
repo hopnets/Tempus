@@ -47,3 +47,28 @@ We provide a shell script (```install_pkg.sh```) for installing the dependencies
 bash install_pkg.sh
 ```
 
+## Step 4: Running the experiments
+
+We run script files for running different groups of experiments. Below, you can find the name of these files and their corresponding group:
+
+* **Running Tempus on fat-tree topologies under various optimization settings**
+  * fattree_tcp_base_100G_run.sh
+  * fattree_tcp_ecs_100G_run.sh
+  * fattree_tcp_paths_100G_run.sh
+  * fattree_tcp_optimal_100G_run.sh
+* **Running Tempus on WAN topologies under different optimization settings**
+  * wan_tcp_base_100G_run.sh
+  * wan_tcp_ecs_100G_run.sh
+  * wan_tcp_paths_100G_run.sh
+  * wan_tcp_optimal_100G_run.sh
+* **Running Tempus with TCP and DCTCP under various latency thresholds**
+  * fattree16_dctcp_optimal_100G_latencythresh.sh
+* **Running Tempus with analytical latency distributions**
+  * fattree_tcp_optimal_100G_run_uniform.sh
+  * wan_tcp_optimal_100G_run_uniform.sh
+* **Measuring the memory footprint of various optimization schemes**
+  * fattree32_tcp_optimal_100G_mem_footprint.sh
+* **Measuring the runtime of Tempus under distinct &#948; values**
+  * fattree16_tcp_optimal_100G_funcacc.sh
+
+To run an experiment, execute ```bash XXX.sh``` and replace "XXX" with the name of the experiment file. These experiments generate output files in the ```./tempus_out``` directory.
