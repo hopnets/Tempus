@@ -1,0 +1,4 @@
+g++ fattree4_tcp_optimal_100G_mem_footprint.cpp -o fattree4_tcp_optimal_100G_mem_footprint.o
+g++ fattree8_tcp_optimal_100G_mem_footprint.cpp -o fattree8_tcp_optimal_100G_mem_footprint.o
+g++ fattree16_tcp_optimal_100G_mem_footprint.cpp -o fattree16_tcp_optimal_100G_mem_footprint.o
+g++ fattree32_tcp_optimal_100G_mem_footprint.cpp -o fattree32_tcp_optimal_100G_mem_footprint.o
