@@ -36,7 +36,7 @@ julia version 1.7.3
 To clone the repository, run the following script:
 
 ```
-git clone https://github.com/hopnets/Tempus.git
+git clone https://github.com/foundational-networks/Tempus.git
 ```
 
 ## Step 3: Installing the dependencies
